@@ -1,34 +1,34 @@
-import Header from './components/Header.jsx'
-import Hero from './components/Hero.jsx'
-import About from './components/About.jsx'
-import Skills from './components/Skills.jsx'
-import Projects from './components/Projects.jsx'
-import Footer from './components/Footer.jsx'
+import Header from "./assets/Header.jsx";
+import Hero from "./assets/Hero.jsx";
+import About from "./assets/About.jsx";
+import Skills from "./assets/Skills.jsx";
+import Projects from "./assets/Projects.jsx";
+import Footer from "./assets/Footer.jsx";
 
 const skills = [
-  'C#',
-  'HTML',
-  'CSS',
-  'GitHub',
-  'JavaScript'
-]
+  "C#",
+  "HTML",
+  "CSS",
+  "GitHub",
+  "JavaScript"
+];
 
 const projects = [
   {
     id: 1,
-    title: 'Página web en C#',
+    title: "Página web en C#",
     description:
-      'Proyecto académico de una página web desarrollada utilizando C#.',
-    technology: 'C#',
+      "Proyecto académico de una página web desarrollada utilizando C#.",
+    technology: "C#"
   },
   {
     id: 2,
-    title: 'Control de stock',
+    title: "Control de stock",
     description:
-      'Proyecto académico para gestionar y controlar el stock de productos.',
-    technology: 'C#',
-  },
-]
+      "Proyecto académico para gestionar y controlar el stock de productos.",
+    technology: "C#"
+  }
+];
 
 function App() {
   return (
@@ -66,7 +66,7 @@ function App() {
       />
 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
