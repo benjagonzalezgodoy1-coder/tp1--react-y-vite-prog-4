@@ -1,70 +1,62 @@
-import Header from "./assets/Header.jsx";
-import Hero from "./assets/Hero.jsx";
-import About from "./assets/About.jsx";
-import Skills from "./assets/Skills.jsx";
-import Projects from "./assets/Projects.jsx";
-import Footer from "./assets/Footer.jsx";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
-const skills = [
-  "C#",
-  "HTML",
-  "CSS",
-  "GitHub",
-  "JavaScript"
-];
-
-const projects = [
-  {
-    id: 1,
-    title: "Página web en C#",
-    description:
-      "Proyecto académico de una página web desarrollada utilizando C#.",
-    technology: "C#"
-  },
-  {
-    id: 2,
-    title: "Control de stock",
-    description:
-      "Proyecto académico para gestionar y controlar el stock de productos.",
-    technology: "C#"
-  }
-];
+import "./App.css";
 
 function App() {
-  return (
-    <div className="app">
+  const nombre = "Benjamin Gonzalez Godoy";
 
+  const habilidades = [
+    "C#",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "GitHub"
+  ];
+
+  const proyectos = [
+    {
+      id: 1,
+      titulo: "Página web en C#",
+      descripcion:
+        "Proyecto de una página web desarrollado utilizando C#."
+    },
+    {
+      id: 2,
+      titulo: "Control de stock",
+      descripcion:
+        "Proyecto de un sistema de control de stock desarrollado en C#."
+    }
+  ];
+
+  return (
+    <div>
       <Header
-        name="Benjamin Gonzalez Godoy"
-        profession="Estudiante de Programación"
+        nombre={nombre}
+        profesion="Estudiante de programación"
       />
 
-      <main>
+      <Hero
+        nombre={nombre}
+        presentacion="Soy un estudiante de programación y este es mi primer trabajo en React."
+      />
 
-        <Hero
-          name="Benjamin Gonzalez Godoy"
-          presentation="Soy un estudiante de programación y este es mi primer trabajo en React."
-        />
+      <About
+        objetivo="Aprender a utilizar React y realizar más proyectos."
+      />
 
-        <About
-          objective="Aprender a utilizar React y realizar más proyectos."
-        />
+      <Skills habilidades={habilidades} />
 
-        <Skills
-          skills={skills}
-        />
-
-        <Projects
-          projects={projects}
-        />
-
-      </main>
+      <Projects proyectos={proyectos} />
 
       <Footer
-        email="benja.gonzalezgodoy1@gmail.com"
-        course="Programación 4 - 2026 / TP1"
+        nombre={nombre}
+        materia="Programación 4"
       />
-
     </div>
   );
 }

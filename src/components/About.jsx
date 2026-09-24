@@ -5,7 +5,7 @@ function About({ objetivo }) {
         <h2>Sobre mí</h2>
 
         <p>
-          Soy Benjamin Gonzalez Godoy, estudiante de programación.
+          Soy Benjamin Gonzalez Godoy, estudiante de programación de la Universidad Tecnologica Nacional, y tambien soy estudiante de RRHH del instituto ICE.
           Este portfolio es mi primer trabajo realizado utilizando
           React.
         </p>
