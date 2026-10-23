@@ -1,62 +1,28 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
 
-import "./App.css";
+import { Routes, Route } from 'react-router-dom';
+
+import Sidebar from './components/Sidebar.jsx';
+
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Skills from './pages/Skills.jsx';
+import Projects from './pages/Projects.jsx';
+import Contact from './pages/Contact.jsx';
 
 function App() {
-  const nombre = "Benjamin Gonzalez Godoy";
-
-  const habilidades = [
-    "C#",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "GitHub"
-  ];
-
-  const proyectos = [
-    {
-      id: 1,
-      titulo: "Página web en C#",
-      descripcion:
-        "Proyecto de una página web desarrollado utilizando C#."
-    },
-    {
-      id: 2,
-      titulo: "Control de stock",
-      descripcion:
-        "Proyecto de un sistema de control de stock desarrollado en C#."
-    }
-  ];
-
   return (
-    <div>
-      <Header
-        nombre={nombre}
-        profesion="Estudiante de programación"
-      />
+    <div className="app-layout">
+      <Sidebar />
 
-      <Hero
-        nombre={nombre}
-        presentacion="Soy un estudiante de programación y este es mi primer trabajo en React."
-      />
-
-      <About
-        objetivo="Aprender a utilizar React y realizar más proyectos."
-      />
-
-      <Skills habilidades={habilidades} />
-
-      <Projects proyectos={proyectos} />
-
-      <Footer
-        nombre={nombre}
-        materia="Programación 4"
-      />
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
     </div>
   );
 }
