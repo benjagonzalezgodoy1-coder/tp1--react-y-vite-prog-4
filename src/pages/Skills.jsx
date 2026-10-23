@@ -1,4 +1,6 @@
 
+import SkillCard from '../components/SkillCard.jsx';
+
 const skills = [
   { id: 1, name: 'C#', level: 'Conocimientos básicos' },
   { id: 2, name: 'HTML', level: 'Conocimientos básicos' },
@@ -20,10 +22,11 @@ function Skills() {
 
       <div className="skills-grid">
         {skills.map((skill) => (
-          <article className="skill-card" key={skill.id}>
-            <h2>{skill.name}</h2>
-            <p>{skill.level}</p>
-          </article>
+          <SkillCard
+            key={skill.id}
+            name={skill.name}
+            level={skill.level}
+          />
         ))}
       </div>
     </section>

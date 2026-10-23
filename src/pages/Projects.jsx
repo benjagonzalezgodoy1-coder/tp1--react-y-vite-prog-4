@@ -1,22 +1,24 @@
 
+import ProjectCard from '../components/ProjectCard.jsx';
+
 const projects = [
   {
     id: 1,
-    name: 'Portfolio personal',
-    description: 'Mi portfolio desarrollado con React.',
-    technologies: 'React, JavaScript y CSS',
+    nombre: 'Portfolio personal',
+    descripcion: 'Mi portfolio web desarrollado como parte de mis trabajos de programación.',
+    tecnologias: 'React, JavaScript y CSS',
   },
   {
     id: 2,
-    name: 'Página web en C#',
-    description: 'Proyecto web realizado anteriormente.',
-    technologies: 'C# y desarrollo web',
+    nombre: 'Página web en C#',
+    descripcion: 'Proyecto web realizado utilizando C#.',
+    tecnologias: 'C#',
   },
   {
     id: 3,
-    name: 'Control de stock',
-    description: 'Sistema para administrar productos y stock.',
-    technologies: 'C#',
+    nombre: 'Control de stock',
+    descripcion: 'Aplicación para gestionar y controlar el stock de productos.',
+    tecnologias: 'C#',
   },
 ];
 
@@ -24,18 +26,16 @@ function Projects() {
   return (
     <section className="page">
       <h1>Mis proyectos</h1>
-
-      <p>Estos son algunos de mis trabajos.</p>
+      <p>Estos son algunos de los proyectos que realicé durante mi aprendizaje.</p>
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <article className="project-card" key={project.id}>
-            <h2>{project.name}</h2>
-            <p>{project.description}</p>
-            <p>
-              <strong>Tecnologías:</strong> {project.technologies}
-            </p>
-          </article>
+          <ProjectCard
+            key={project.id}
+            nombre={project.nombre}
+            descripcion={project.descripcion}
+            tecnologias={project.tecnologias}
+          />
         ))}
       </div>
     </section>
