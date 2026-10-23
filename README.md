@@ -1,64 +1,94 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
-# TP1 - Portfolio Personal con React
+# TP2 - Portfolio Multipágina con React Router DOM.
 
 ## Benjamin Gonzalez Godoy
 
-### Descripción
+## Descripción
 
-Este proyecto es mi primer trabajo realizado con React para la materia **Programación 4 - 2026**.
+Este proyecto es el Trabajo Práctico N.º 2 de la materia Programación 4 - 2026.
 
-El objetivo del proyecto es crear un portfolio personal utilizando componentes de React y mostrar información sobre mí, mis habilidades y algunos de los proyectos que realicé.
+Consiste en la ampliación de mi portfolio personal realizado en el TP1, utilizando React y React Router DOM para crear una aplicación web con varias páginas y navegación entre ellas.
 
-## Objetivos
+
+## Objetivos:
 
 - Aprender a utilizar React.
-- Aprender a trabajar con componentes.
+
+- Trabajar con componentes reutilizables.
+
 - Utilizar props para pasar información entre componentes.
-- Realizar más proyectos utilizando React.
+
+- Implementar navegación entre páginas con React Router DOM.
+
+- Utilizar arreglos y el método map() para mostrar información.
+
+- Incorporar interacciones mediante useState.
+
+- Mejorar el diseño adaptable a diferentes tamaños de pantalla.
+
 - Familiarizarme con Git y GitHub.
 
-## Tecnologías utilizadas
+
+## Tecnologías utilizadas:
 
 - React
 - JavaScript
+- JSX
 - HTML
 - CSS
-- C#
-- Git
-- GitHub
+- React Router DOM
 - Vite
+- Git y GitHub
 
-## Habilidades
+
+## Páginas del portfolio:
+
+- Inicio: presentación personal.
+
+- Sobre mí: información sobre mi perfil y mis objetivos.
+
+- Habilidades: tecnologías y herramientas que estoy aprendiendo.
+
+- Proyectos: presentación de mis proyectos realizados.
+
+- Contacto: información de contacto y botón para copiar mi correo electrónico.
+
+
+## Habilidades:
 
 - C#
 - HTML
 - CSS
 - JavaScript
-- GitHub
+- React
+- Git y GitHub
 
-## Proyectos
 
-### Página web en C#
+## Proyectos:
+
+- Portfolio personal
+
+Portfolio web desarrollado con React, JavaScript y CSS.
+
+- Página web en C#
 
 Proyecto de una página web desarrollado utilizando C#.
 
-### Sistema de control de stock
+- Sistema de control de stock
 
-Proyecto de un sistema de control de stock desarrollado utilizando C#.
+Proyecto para gestionar y controlar el stock de productos, desarrollado utilizando C#.
+
+
+## Funcionalidades:
+
+- Navegación entre cinco páginas mediante React Router DOM.
+
+- Menú lateral con indicador de página activa.
+
+- Opción para contraer y expandir el menú.
+
+- Tarjetas reutilizables para mostrar habilidades y proyectos.
+
+- Botón para copiar el correo electrónico.
+
+- Diseño adaptable a diferentes tamaños de pantalla.
